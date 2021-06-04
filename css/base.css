@@ -1,0 +1,132 @@
+/* 版心 */
+.center-wrap {
+  width: 825px;
+  margin: 0 auto;
+  font-family: "Helvetica";
+}
+
+/* 清除浮动 */
+.clearfix {
+  overflow: hidden;
+}
+.clearfix::after {
+  content:"" ;
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+
+/* 定义字体 */
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/HELVETI1.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url("../fonts/iconfont.eot");
+  src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/iconfont.woff2") format("woff2"),
+    url("../fonts/iconfont.woff") format("woff"),
+    url("../fonts/iconfont.ttf") format("truetype"),
+    url("../fonts/iconfont.svg#iconfont") format("svg");
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 24px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 轮播图按钮 */
+.slideshow-btn {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+}
+.slideshow-leftbtn {
+  left: 0;
+  background-image: url(../images/prev.png);
+  background-size: contain;
+}
+
+.slideshow-rightbtn {
+  right: 0px;
+  background-image: url(../images/next.png);
+  background-size: contain;
+}
+
+.slideshow-leftbtn:hover {
+  background-image: url(../images/prev_active.png);
+}
+.slideshow-rightbtn:hover {
+  background-image: url(../images/next_active.png);
+}
+.slideshow-btn img {
+  width: 34px;
+  height: 34px;
+}
+
+/* 区域标题 */
+.content-top {
+  position: relative;
+  height: 130px;
+}
+.content-top .topic {
+  position: absolute;
+  /* float: left; */
+  height: 30px;
+  width: 200px;
+  top:70px;
+  left:50%;
+  margin-left: -100px;
+
+}
+.content-top >h2 {
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  left: 367px;
+  font-size: 23px;
+  height: 30px;
+  width: 92px;
+  color: #696868;
+  line-height: 30px;
+  text-align: center;
+}
+.content-top .topic>h6 {
+  font-size: 13px;
+  height: 17px;
+  width: 200px;
+  /* margin-left: 0px;
+  margin-right: 0px; */
+  margin:0 auto;
+  color: #9b9b9b;
+  line-height: 17px;
+  padding-top: 2px;  
+  text-align: center;
+}
+.content-top .topic>hr{
+  border-bottom: 1px solid #0058aa;
+  width: 66px;
+  /* margin-bottom: 5px; */
+}
+
+.line {
+  position: absolute;
+  top: 70px;
+  border-bottom: 1px solid #808080;
+  /* border-bottom:3px solid blue; */
+  height: 1px;
+  width: 366px;
+}
+.line:nth-child(1) {
+  left:0px
+}
+.line:nth-child(2) {
+  right: 0;
+}
